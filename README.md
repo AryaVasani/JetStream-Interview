@@ -16,8 +16,11 @@ python manage_access.py alice@example.com Google
 ## Tech Stack Rationale
 
 **Auth0** - Identity provider
+
 **PostgreSQL** - Relational database
+
 **FastAPI** - Python API framework
+
 **SQLAlchemy** - Object Relational Mapper
 
 ## Quick Start
@@ -79,3 +82,4 @@ Auth0 → idp_sync.py → PostgreSQL → api.py/check_access.py → Result
 3. CLI/API queries database for access decisions
 
 4. Returns access status + specific permissions
+
