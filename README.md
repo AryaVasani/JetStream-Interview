@@ -9,7 +9,7 @@ Validates user access to applications and returns their permissions by syncing i
 
 **Example:**
 ```bash
-python check_access.py alice@example.com Google
+python manage_access.py alice@example.com Google
 # Output: User alice@example.com has access to Google → Permissions: ['Docs:Read', 'Docs:Write', 'Sheets:Read', 'Sheets:Write']
 ```
 
@@ -77,4 +77,5 @@ Auth0 → idp_sync.py → PostgreSQL → api.py/check_access.py → Result
 1. Sync fetches users, groups, apps from Auth0
 2. Stores relationships in PostgreSQL
 3. CLI/API queries database for access decisions
+
 4. Returns access status + specific permissions
